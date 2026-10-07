@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
+@import '@clerk/ui/themes/shadcn.css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -126,5 +127,11 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+@layer {
+  .cl-buttonArrowIcon {
+    @apply hidden;
   }
 }

@@ -2,6 +2,7 @@ import { ThemeProvider } from "./theme-provider"
 import { QueryProvider } from "./query-provider"
 import { ReduxProvider } from "./redux-provider"
 import { ClerkProvider } from "@clerk/nextjs"
+import { shadcn } from "@clerk/ui/themes"
 
 type Props = {
   children: React.ReactNode
@@ -9,7 +10,11 @@ type Props = {
 
 export const Providers = ({ children }: Props) => {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        theme: shadcn,
+      }}
+    >
       <ThemeProvider>
         <QueryProvider>
           <ReduxProvider>{children}</ReduxProvider>
