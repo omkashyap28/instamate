@@ -14,6 +14,7 @@
   "dependencies": {
     "@base-ui/react": "^1.8.0",
     "@clerk/nextjs": "^7.9.10",
+    "@clerk/ui": "^1.39.0",
     "@hugeicons/core-free-icons": "^4.3.5",
     "@hugeicons/react": "^1.1.10",
     "@reduxjs/toolkit": "^2.13.0",
@@ -21,8 +22,10 @@
     "@tanstack/react-form-nextjs": "^1.33.5",
     "@tanstack/react-query": "^5.104.1",
     "@tanstack/react-table": "^9.2.5",
+    "axios": "^1.20.0",
     "class-variance-authority": "^0.7.1",
     "cn": "^0.4.0",
+    "mongoose": "^9.11.0",
     "next": "16.3.8",
     "next-themes": "^0.4.6",
     "react": "19.2.8",
