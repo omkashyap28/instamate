@@ -1,7 +1,11 @@
 import { SignUp } from "@clerk/nextjs"
+import { Metadata } from "next"
 
-const CLERK_SIGNIN_REDIRECT_URL = process.env.CLERK_SIGNIN_REDIRECT_URL
-
-const Page = () => <SignUp signInUrl={CLERK_SIGNIN_REDIRECT_URL} />
+export const metadata: Metadata = {
+  title: "SignUp",
+  description:
+    "SignUp to instaslide to get access to all features without any interuptions.",
+}
+const Page = () => <SignUp />
 
 export default Page
